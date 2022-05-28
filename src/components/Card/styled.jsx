@@ -43,4 +43,3 @@ export const ContainerBtns = styled.div`
     gap: calc(.5vw * ${deviceMobile});
   }
 `;
-export const Form = styled.form``;

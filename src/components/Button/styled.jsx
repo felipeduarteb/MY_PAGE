@@ -10,6 +10,7 @@ export const ButtonSlyle = styled.button`
     border-radius: 5px;
     background: none;
     border-color: RGBA(116,136,214, .1);
+    animation: myAnim 1s cubic-bezier(0.87, 0, 0.13, 1) 0s infinite normal forwards;
     cursor: pointer;
     :hover {
         background: #bbc3e618;
@@ -22,4 +23,15 @@ export const ButtonSlyle = styled.button`
         width: calc(${widthContainer} * ${deviceMobile});
         height: calc(${heightContainer} * ${deviceMobile});
     }
+    @keyframes myAnim {
+	0% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+
+	100% {
+		opacity: 0;
+		transform: translateX(100px);
+	}
+}
 `;
